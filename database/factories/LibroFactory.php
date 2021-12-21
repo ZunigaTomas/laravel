@@ -25,7 +25,7 @@ class LibroFactory extends Factory
             'portada'=> $this->faker->imageUrl(),
             'sinopsis'=> $this->faker->paragraph(),
             'cantidad_paginas'=> $this->faker->randomNumber(4,true),
-            'generos'=> $this->faker->randomElements(['politica','aventura','fantasia','ciencia'],2, false),
+            'generos'=> $this->faker->randomElement(['politica','aventura','fantasia','ciencia']),
             'precio'=> $this->faker->randomNumber(4,true),
             'stock'=> $this->faker->randomNumber(2,false)
         ];
