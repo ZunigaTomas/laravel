@@ -42,7 +42,7 @@
             <form method="post" action="{{route('libros.destroy', $libro)}}">
                 @method('delete')
                 @csrf
-                <button type="submit" class="btn btn-warning">Eliminar libro</button>
+                <button type="submit" class="btn btn-warning" onclick="return confirm('Estás seguro que deseas eliminar este libro?');">Eliminar libro</button>
                 <a href="{{ route('libros.edit', $libro) }}" class="btn btn-outline-primary">Editar libro</a>
             </form>
         </div>

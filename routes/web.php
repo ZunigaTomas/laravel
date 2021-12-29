@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LibrosController;
-use App\Http\Controllers\InicioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +13,9 @@ use App\Http\Controllers\InicioController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', [LibrosController::class, 'index']);
 
-Route::get('/', InicioController::class)->name('inicio');
+Route::resource('libros', LibrosController::class);
 
 /*
 Route::get('/libros', [LibrosController::class, 'index'])->name('libros.index');
@@ -33,16 +33,3 @@ Route::put('/libros/{libro}', [LibrosController::class, 'update'])->name('libros
 Route::delete('/libros/{libro}', [LibrosController::class, 'destroy'])->name('libros.destroy');
 
 */
-Route::resource('libros', LibrosController::class);
-
-
-/*Route::get('libros/{libro}/{categoria?}', function ($libro, $categoria=null) {
-
-    if ($categoria) {
-        return "<h1>libro: $libro. categoria: $categoria</h1>";
-    } else {
-        return view('detalles-libro', ['libro' => $libro]);
-    }
-});*/
-
-Route::view('/contacto', 'contacto')->name('contacto');
