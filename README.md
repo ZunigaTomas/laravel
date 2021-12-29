@@ -8,9 +8,8 @@
 
 Una vez descargado la carpeta, la cual debe estar dentro de htdocs, realiza los siguientes pasos:
 
-1 - Ejecutar "npm install".
-2 - Luego "composer install".
-3 - Crear la db.
-4 - Configurar .env.
+1 - Ejecutar "npm install". <br>
+2 - Luego "composer install". <br>
+3 - Crear la db. <br>
+4 - Configurar .env. <br>
 5 - Ejecutar "php artisan migrate --seed
-6 - Acceder a http://localhost/testeo/public/ o utilizando "php artisan serve".
