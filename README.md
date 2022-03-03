@@ -4,10 +4,6 @@
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
 </p>
 
-## About Laravel
-
-Una vez descargado la carpeta, la cual debe estar dentro de htdocs, realiza los siguientes pasos:
-
 1 - Ejecutar "npm install". <br>
 2 - Luego "composer install". <br>
 3 - Crear la db. <br>
