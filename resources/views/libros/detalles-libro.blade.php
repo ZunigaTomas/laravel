@@ -2,11 +2,6 @@
 
 @section('titulo', $libro->nombre)
 
-<style>
-    .container-fluid .row{
-        margin: 2%;
-    }
-</style>
 
 @section('contenido')
     <div class="container-fluid">

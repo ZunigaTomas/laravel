@@ -10,3 +10,10 @@ a {
 li {
     list-style: none;
 }
+.container-fluid .row{
+    margin: 2%;
+}
+.col-md-3 img {
+    width: 320px;
+    height: auto;
+}

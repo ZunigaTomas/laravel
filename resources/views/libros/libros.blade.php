@@ -7,7 +7,7 @@
     <div class="container-fluid">
         <ul class="row">
         @foreach($libros as $l)
-            <li class="col-4">
+            <li class="col-12 col-sm-6 col-md-12 col-lg-6 col-xl-4">
                 <a href="{{route('libros.show', $l->id)}}">
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
